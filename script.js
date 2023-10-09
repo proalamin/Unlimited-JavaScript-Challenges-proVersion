@@ -1,12 +1,21 @@
 console.log("js connected");
 
 const apiKey = "b0fc41b2b17df2c39088a880df0d009a";
-const apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiUrl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
+
+
+
+localStorage.setItem("defaultCity", "Dhaka");
+const defaultCity = localStorage.getItem("defaultCity");
+if (defaultCity) {
+
+  checkWeather(defaultCity);
+}
+
 
 async function checkWeather(city) {
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
