@@ -90,3 +90,13 @@ body{
     font-size: 28px;
     margin-top: -6px;
 }
+
+.weather{
+    display: none;
+}
+
+.notFound{
+    font-size: 18px;
+    margin-top: 10px;
+    display: none;
+}
