@@ -14,6 +14,7 @@ const defaultCity = localStorage.getItem("defaultCity");
 if (defaultCity) {
 
   checkWeather(defaultCity);
+  console.log('the default city is ' + defaultCity)
 }
 
 
