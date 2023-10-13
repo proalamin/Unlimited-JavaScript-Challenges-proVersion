@@ -1,69 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
-body{
-    background-color: #d0e7cb;
-}
-
-.container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* vertical-align: cen; */
+body {
+  background-color: #d0e7cb;
 }
 
-.sub-btn{
-    padding: 10px 60px;
-    background: #fff;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: 500;
-    border-radius: 30px;
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* vertical-align: cen; */
 }
 
-.popUp{
-    width: 400px;
-    background: #fff;
-    padding: 0 30px 30px;
-    border-radius: 8px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #333;
+.sub-btn {
+  padding: 10px 60px;
+  background: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
 }
 
-.popUp img{
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+.popUp {
+  width: 400px;
+  background: #fff;
+  padding: 0 30px 30px;
+  border-radius: 8px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.2);
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
 }
 
-.popUp h1{
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
 }
 
-.popUp button{
-   width: 100%;
-   margin-top: 50px;
-   padding: 10px 0;
-   background: #6fd649;
-   color: #fff;
-   border: 0;
-   font-size: 18px;
-   border-radius: 4px;
-   cursor: pointer;
-   box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+.popUp img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
 
+.popUp h1 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popUp button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
 }
