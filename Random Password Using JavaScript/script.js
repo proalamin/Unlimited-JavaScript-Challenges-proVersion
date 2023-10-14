@@ -1,7 +1,7 @@
 console.log("js connected");
 
 const passwordBox = document.getElementById("password");
-const length = 12;
+const length = 8;
 
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
